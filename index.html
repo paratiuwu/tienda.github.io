@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tienda de Cosméticos</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" href="script.js">
+  <script src="https://www.paypal.me/jhoser89"></script>
+</head>
+<body>
+  <header>
+    <img src="imagenes.webp/logo.png" width="25%" alt="Logo de la tienda">
+    <h1>Tienda de Cosméticos</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#">Inicio</a></li>
+      <li><a href="#productos">Productos</a></li>
+      <li><a href="#ofertas">Ofertas</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <section id="productos">
+      <h2>Productos Destacados</h2>
+      <div class="product" onclick="toggleDescription(this)">
+        <h3>Laneige Water Sleeping Mask</h3>
+        <img src="imagenes.webp/1xd.png" width="50%" alt="Laneige Water Sleeping Mask">
+        <p class="description">Con Laneige Water Sleeping Mask despiérta con una piel descansada, fresca y radiante.</p>
+        <p class="price">$100.00</p>
+        <button onclick="addToCart('Producto 1')">Agregar al carrito</button>
+      </div>
+      <div class="product" onclick="toggleDescription(this)">
+        <h3>My Lash Serum</h3>
+        <img src="imagenes.webp/2xd.png" width="50%" alt="My Lash Serum">
+        <p class="description"> Es un suero para las pestañas que proporciona una hidratación y rica nutrición para un aspecto más saludable.</p>
+        <p class="price">$55.00</p>
+        <button onclick="addToCart('Producto 2')">Agregar al carrito</button>
+      </div>
+    </section>
+  </div>
+
+  <div class="container">
+    <section id="ofertas">
+      <h2>Ofertas Especiales</h2>
+      <div class="product" onclick="toggleDescription(this)">
+        <h3>Strawberry Sugar Food Mask</h3>
+        <img src="imagenes.webp/3xd.png" alt="Strawberry Sugar Food Mask">
+        <p class="description">Es una mascarilla exfoliante multiuso, formulada con azúcar negra orgánica, BHA y semilla de fresa dulce para exfoliar suavemente de adentro hacia afuera.</p>
+        <p class="price">$60.00</p>
+        <button onclick="addToCart('Producto 3')">Agregar al carrito</button>
+      </div>
+      <div class="product" onclick="toggleDescription(this)">
+        <h3>Natural Perfection Fresh Sun Stick SPF50+ PA++++</h3>
+        <img src="imagenes.webp/4xd.png" alt="Natural Perfection Fresh Sun Stick SPF50+ PA++++">
+        <p class="description">Natural Perfection Fresh Sun Stick es una barra de protector solar que ayuda a controlar el sebo con una textura fresca no pegajosa.</p>
+        <p class="price">$120.00</p>
+        <button onclick="addToCart('Producto 4')">Agregar al carrito</button>
+      </div>
+    </section>
+  </div>
+
+  <div class="ff">
+    <section id="contacto">
+      <h2>Contacto</h2>
+      <p>Puedes ponerte en contacto con nosotros a través de los siguientes medios:</p>
+      <ul>
+        <li>Teléfono: 927545062</li>
+        <li>Email: cosmeticoscoreanos@gmail.com</li>
+       
+      </ul>
+    </section>
+  </div>
+
+  <section id="cart-section">
+    <h2>Carrito de Compras</h2>
+    <div id="cart"></div>
+    <button onclick="checkout()">Pagar</button>
+  </section>
+
+  <footer>
+    <p>&copy; 2023 Tienda de Cosméticos. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
